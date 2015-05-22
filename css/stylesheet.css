@@ -1,5 +1,5 @@
 /* offset to take top navbar into account */
-#head {color:black;}
+#head {color:white;}
 #main { margin-top: 0px; }
 #separador {margin-top: 50px;}
 /* wallpaper hack doesnt make sense in print */
@@ -10,13 +10,13 @@
 }
 
 html, body {
-  color: #222;
+  color: white;
 }
 div, p, span {
-    color:#121212;
+    color:#fbf4f4;
 }
 body {
-  background-color: white;
+  background-color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
@@ -50,19 +50,19 @@ body {
 h1, h2, h3, h4, h5, h6  {
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    color:#121212;
+    color:white;
 }
 
 pre, code {
   font-family: "Oxygen Mono", monospaced;
-  background: rgba(255,255,255,0.5);
-  color: #121212;
+  background: rgba(0,0,0,0.5);
+  color: white;
   border: 1px solid rgba(0,0,0,0.8);
 }
 
 .smallprint {
   font-size: 0.8em;
-  color: #121212;
+  color: white;
 }
 
 .captioned-image {
@@ -85,9 +85,9 @@ pre, code {
 
 #wrap {
   /* the background tint layer */
-  background-image: radial-gradient(ellipse at center top, rgba(225,225,225,0.8) 10%, rgba(0,0,0,0) 100%);
+  background-image: radial-gradient(ellipse at center top, rgba(60, 53, 53, 0.8) 20%, rgba(0,0,0,0) 100%);
   /* for older webkit */
-  background: -webkit-radial-gradient(center top, ellipse cover, rgba(255,255,255,0.9) 10%,rgba(0,0,0,0) 100%);
+  background: -webkit-radial-gradient(center top, ellipse cover, rgba(60, 53, 53, 0.8) 20%,rgba(0,0,0,0) 100%);
 }
 
 /* NAV menu de navegacion */
@@ -97,12 +97,12 @@ pre, code {
 }
 
 .navbar-inverse  {
-    background-color: rgba(180,180,180,0.4);
+    background-color: rgba(0,0,0,0.4);
     transition: 1s;
     border: 0;
 }
 .navbar-inverse:hover  {
-    background-color: rgba(180,180,180,0.9);
+    background-color: rgba(0,0,0,0.9);
     transition: 1s;
     border: 0;
 }
@@ -113,7 +113,7 @@ pre, code {
   padding-top: 16px;
   padding-bottom: 16px;
   margin-bottom: 0;
-  color:#121212;
+  color:white;
   font-weight: 600;
   font-size: 1.1em;
   text-align: center;
@@ -122,7 +122,7 @@ pre, code {
 }
 
 .nav > li > a:hover, .nav > li.open > a:hover {
-  color: #121212;
+  color: #e2e2e2;
   border-bottom: 4px solid orange;
   padding-bottom: 12px;
 }
@@ -132,12 +132,12 @@ pre, code {
 }
 
 .nav ul.dropdown-menu a {
-  color: #121212;
+  color: white;
 }
 
 .nav .dropdown-menu > li > a:hover {
   background: orange;
-  color: #000;
+  color: #e2e2e2;
 }
 
 .navbar-header  a.navbar-brand {
@@ -165,7 +165,7 @@ a.navbar-brand {
 
 .jumbotron h1 {
   font-weight: 200;
-  color: #333;
+  color: white;
   text-shadow: 0px 0px 12px rgba(255,255,255,0.4);
 }
 .jumbotron p {
@@ -174,7 +174,7 @@ a.navbar-brand {
 
 /* Set the fixed height of the footer here */
 #footer, #footer p {
-    color:white;
+    color:#c1c1c1;
 }
 #footer {
   height: 60px;
