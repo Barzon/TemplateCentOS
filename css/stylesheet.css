@@ -1,6 +1,7 @@
 /* offset to take top navbar into account */
-#main { margin-top: 50px; }
-
+#head {color:black;}
+#main { margin-top: 0px; }
+#separador {margin-top: 50px;}
 /* wallpaper hack doesnt make sense in print */
 @media print {
   .backstretch img {
@@ -8,9 +9,14 @@
   }
 }
 
+html, body {
+  color: #222;
+}
+div, p, span {
+    color:#121212;
+}
 body {
-  color: #ccc;
-  background-color: #050517;
+  background-color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
@@ -42,20 +48,21 @@ body {
 
 
 h1, h2, h3, h4, h5, h6  {
-  font-family: "Exo", sans-serif;
-  font-weight: 300;
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color:#121212;
 }
 
 pre, code {
   font-family: "Oxygen Mono", monospaced;
-  background: rgba(0,0,0,0.5);
-  color: white;
+  background: rgba(255,255,255,0.5);
+  color: #121212;
   border: 1px solid rgba(0,0,0,0.8);
 }
 
 .smallprint {
   font-size: 0.8em;
-  color: #666666;
+  color: #121212;
 }
 
 .captioned-image {
@@ -78,14 +85,11 @@ pre, code {
 
 #wrap {
   /* the background tint layer */
-  background-image: radial-gradient(ellipse at center top, rgba(55,74,135,0.8) 20%, rgba(0,0,0,0) 100%);
+  background-image: radial-gradient(ellipse at center top, rgba(225,225,225,0.8) 10%, rgba(0,0,0,0) 100%);
   /* for older webkit */
-  background: -webkit-radial-gradient(center top, ellipse cover, rgba(32,74,135,0.8) 20%,rgba(0,0,0,0) 100%);
+  background: -webkit-radial-gradient(center top, ellipse cover, rgba(255,255,255,0.9) 10%,rgba(0,0,0,0) 100%);
 }
-/*
-#header img {
-  margin: 20px;
-}*/
+
 /* NAV menu de navegacion */
 .navbar {
   font-size: 1.1em; 
@@ -93,16 +97,23 @@ pre, code {
 }
 
 .navbar-inverse  {
-  background-color: rgba(0,0,0,0.65);
-  border: 0;
+    background-color: rgba(180,180,180,0.4);
+    transition: 1s;
+    border: 0;
 }
+.navbar-inverse:hover  {
+    background-color: rgba(180,180,180,0.9);
+    transition: 1s;
+    border: 0;
+}
+
 
 .nav > li > a {
   text-align: center;
   padding-top: 16px;
   padding-bottom: 16px;
   margin-bottom: 0;
-  color: #777;
+  color:#121212;
   font-weight: 600;
   font-size: 1.1em;
   text-align: center;
@@ -111,7 +122,7 @@ pre, code {
 }
 
 .nav > li > a:hover, .nav > li.open > a:hover {
-  color: white;
+  color: #121212;
   border-bottom: 4px solid orange;
   padding-bottom: 12px;
 }
@@ -121,12 +132,12 @@ pre, code {
 }
 
 .nav ul.dropdown-menu a {
-  color: white;
+  color: #121212;
 }
 
 .nav .dropdown-menu > li > a:hover {
   background: orange;
-  color: white;
+  color: #000;
 }
 
 .navbar-header  a.navbar-brand {
@@ -139,6 +150,13 @@ a.navbar-brand {
   font-size: inherit;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color:white;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:#f0f0f0;
+}
+
 .jumbotron {
   background: none;
   padding-bottom: 12px;
@@ -147,7 +165,7 @@ a.navbar-brand {
 
 .jumbotron h1 {
   font-weight: 200;
-  color: white;
+  color: #333;
   text-shadow: 0px 0px 12px rgba(255,255,255,0.4);
 }
 .jumbotron p {
@@ -155,6 +173,9 @@ a.navbar-brand {
 }
 
 /* Set the fixed height of the footer here */
+#footer, #footer p {
+    color:white;
+}
 #footer {
   height: 60px;
   background-color: rgba(0,0,0,0.2);
@@ -182,25 +203,6 @@ a.navbar-brand {
 
 .container .credit {
   margin: 20px 0;
-}
-
-.downloadbutton a {
-  display: inline;
-  color: white;
-  font-size: 32px;
-  font-weight: 600;
-/*  text-transform: uppercase; */
-  text-shadow: 0 0.5px 2px rgba(0,0,0,0.3);
-  background: goldenrod;
-  background: linear-gradient(to bottom, rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%);
-  padding: 0 32px 0 32px;
-  border-radius: 60px;
-  text-align: center;
-  border: 2px solid #cc6611;
-}
-
-.downloadbutton a:active {
-  background: linear-gradient(to bottom, rgba(255,175,75,1) 100%,rgba(255,146,10,1) 0%);
 }
 
 div.thumbnail {
@@ -231,22 +233,6 @@ ul#markdown-toc:before {
   margin-left: -18px;
   margin-bottom: 2px;
   text-decoration: underline;
-}
-
-/* rss feed jquery plugin */
-.feedEkList{
-//  width:450px; 
-  list-style:none outside none;
-}
-.itemTitle a{
-  font-weight:bold;
-}
-.itemDate{
-  font-size: 0.8em;
-  color:rgba(255,255,255,0.5);
-}
-#CSVTable a {
-  color: #ddd;
 }
 
 ul.sessions a {
