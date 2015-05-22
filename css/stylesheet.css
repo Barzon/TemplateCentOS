@@ -1,5 +1,5 @@
 /* offset to take top navbar into account */
-#main { margin-top: 0px; }
+#main { margin-top: 50px; }
 
 /* wallpaper hack doesnt make sense in print */
 @media print {
@@ -14,6 +14,32 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
+
+.back-fx {
+    left: 0px; 
+    top: 0px; 
+    overflow: hidden; 
+    margin: 0px; 
+    padding: 0px; 
+    min-height: 100%; 
+    min-width: 100%; 
+    z-index: -999999; 
+    position: fixed;
+}
+.back-img {
+    position: absolute; 
+    margin: 0px; 
+    padding: 0px; 
+    border: none; 
+    min-width: 100%; 
+    min-height: 100%; 
+    max-height: none; 
+    max-width: none; 
+    z-index: -999999; 
+    left: 0px; 
+    top: -80px;
+}
+
 
 h1, h2, h3, h4, h5, h6  {
   font-family: "Exo", sans-serif;
@@ -52,14 +78,14 @@ pre, code {
 
 #wrap {
   /* the background tint layer */
-  background-image: radial-gradient(ellipse at center top, rgba(32,74,135,0.8) 20%, rgba(0,0,0,0) 100%);
+  background-image: radial-gradient(ellipse at center top, rgba(55,74,135,0.8) 20%, rgba(0,0,0,0) 100%);
   /* for older webkit */
   background: -webkit-radial-gradient(center top, ellipse cover, rgba(32,74,135,0.8) 20%,rgba(0,0,0,0) 100%);
 }
-
+/*
 #header img {
   margin: 20px;
-}
+}*/
 /* NAV menu de navegacion */
 .navbar {
   font-size: 1.1em; 
@@ -67,7 +93,7 @@ pre, code {
 }
 
 .navbar-inverse  {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.65);
   border: 0;
 }
 
