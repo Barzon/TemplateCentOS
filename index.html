@@ -9,10 +9,7 @@
         <meta content="" name="author" />
 
         <script src="js/jquery.min.js"></script>
-        <!--
-        <script src="js/jquery.cycle2.min.js"></script>
-        <script src="js/jquery.cycle2.center.min.js"></script>
-        -->
+        
         <script src="js/jquery.backstretch.min.js"></script>
         <script src="css/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
         <link href="css/bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -29,8 +26,8 @@
             <img src="images/background.jpeg" class="img-responsive back-img">
         </div>
         <div id="wrap">
-            <header id="header">
-            <div class="navbar navbar-inverse navbar-fixed-top">
+            <header id="header">                                                    
+                <div class="navbar navbar-inverse">
                 <div class="container">
                     <div class="navbar-header">
                         <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
@@ -38,8 +35,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#" title="Home">
-                            <img src="images/logo_small.png"></a>
+                        <a class="navbar-brand" href="#" title="Inicio Enedatos"><img src="images/logo_enedatos.jpg"></a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -122,9 +118,19 @@
                     </div>
                 </div>
             </div>
-            </header>                
-            <main class="container" id="main">
-                <div id="separador" class="row">&nbsp;</div>
+                <div id="status-bar">
+                <div class="container-fluid">
+                <div class="row status-bar">
+                    <div class="col-xs-12">
+                        status bar text
+                    </div>
+                </div>                
+                </div>               
+</div>                    
+                
+            </header>
+            <main id="main">
+            <div class="container">                                
                 <div class="row">
                     <div class="jumbotron col-md-12">
                         <h1 id="centos-7-is-here">Template basada en CentOS 7 site</h1>
@@ -153,12 +159,13 @@
                         </p>
                         </div>
                     </div>                
-            </main>
+            </div>
             <footer id="footer">
                 <div class="container text-center">
                     <p class="text-muted credit">© 2015 Template CentOS</p>
                 </div>
             </footer>
+            </main>
         </div>                
     </body>
 </html>

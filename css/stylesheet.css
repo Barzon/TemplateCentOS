@@ -2,6 +2,7 @@
 #head {color:black;}
 #main { margin-top: 0px; }
 #separador {margin-top: 50px;}
+#wrap {height:100%; width:100%; background-color:rgba(255,255,255,0.6);}
 /* wallpaper hack doesnt make sense in print */
 @media print {
   .backstretch img {
@@ -15,7 +16,7 @@ html, body {
 div, p, span {
     color:#121212;
 }
-body {
+body {    
   background-color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
@@ -83,12 +84,13 @@ pre, code {
   }
 }
 
-#wrap {
+#main {
   /* the background tint layer */
   background-image: radial-gradient(ellipse at center top, rgba(255,255,255,0.9) 20%, rgba(0,0,0,0) 100%);
   /* for older webkit */
   background: -webkit-radial-gradient(center top, ellipse cover, rgba(255,255,255,0.9) 20%,rgba(0,0,0,0) 100%);
 }
+/* header INICIO */
 
 /* NAV menu de navegacion */
 .navbar {
@@ -97,12 +99,12 @@ pre, code {
 }
 
 .navbar-inverse  {
-    background-color: rgba(180,180,180,0.4);
+    background-color: rgba(33, 153, 229, 1);
     transition: 1s;
     border: 0;
 }
 .navbar-inverse:hover  {
-    background-color: rgba(180,180,180,0.9);
+    background-color: rgba(33, 153, 229, 0.5);
     transition: 1s;
     border: 0;
 }
@@ -113,7 +115,7 @@ pre, code {
   padding-top: 16px;
   padding-bottom: 16px;
   margin-bottom: 0;
-  color:#121212;
+  color:white;
   font-weight: 600;
   font-size: 1.1em;
   text-align: center;
@@ -122,8 +124,8 @@ pre, code {
 }
 
 .nav > li > a:hover, .nav > li.open > a:hover {
-  color: #121212;
-  border-bottom: 4px solid orange;
+  color: white;
+  border-bottom: 4px solid #ffd800;
   padding-bottom: 12px;
 }
 
@@ -132,11 +134,11 @@ pre, code {
 }
 
 .nav ul.dropdown-menu a {
-  color: #121212;
+  color: white;
 }
 
 .nav .dropdown-menu > li > a:hover {
-  background: orange;
+  background: #ffd800;
   color: #000;
 }
 
@@ -145,7 +147,9 @@ pre, code {
   padding: 0;
   border: none;
 }
-
+.navbar-brand img {
+    margin:5px auto;
+}
 a.navbar-brand {
   font-size: inherit;
 }
@@ -156,6 +160,19 @@ a.navbar-brand {
 .navbar-inverse .navbar-nav>li>a:hover {
     color:#f0f0f0;
 }
+
+.status-bar {
+    min-height:30px;
+    background-color:#333;
+    height:30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.status-bar, .status-bar p, .status-bar div {
+        color:white;
+}
+
+/* header FIN */
 
 .jumbotron {
   background: none;
